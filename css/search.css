@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "BeaufortHeavy";
+    src: url(/font/BeaufortforLOL-Heavy.otf);
+}
+
+@font-face {
+    font-family: "BeaufortHeavyItalic";
+    src: url(/font/BeaufortforLOL-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBold";
+    src: url(/font/BeaufortforLOL-Bold.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBoldItalic";
+    src: url(/font/BeaufortforLOL-BoldItalic.otf);
+}
+
+.container-pesquisa {
+    
+    background-color: #272741e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 1.5rem;
+}
+
+.item-pesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.pesquisa-titulo {
+    font-size: 1.3rem;
+    font-family: "BeaufortBold";
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.pesquisa-barra {
+    font-family: var(--fonte-texto);
+    width: 80%;
+    padding: 10px;
+    font-size: .75em;
+    border-radius: 20px;
+    border: none;
+}
+
+.pesquisa-barra::placeholder {
+    text-align: center;
+}
+
+.pesquisa-barra:focus {
+    outline: none;
+}
+
+
+.pesquisa-botao {
+    width: 30%;
+    background-color: var(--dark-primary-color);
+    border-radius: 20px;
+    border: none;
+    font-family: "BeaufortHeavy";
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.pesquisa-botao:hover {
+    box-shadow: 0px 0px 10px var(--botao-hover);
+    background-color: var(--primary-color);
+}
+
+.resultados-pesquisa {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #272741e3;
+}

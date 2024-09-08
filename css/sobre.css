@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "BeaufortHeavy";
+    src: url(/font/BeaufortforLOL-Heavy.otf);
+}
+
+@font-face {
+    font-family: "BeaufortHeavyItalic";
+    src: url(/font/BeaufortforLOL-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBold";
+    src: url(/font/BeaufortforLOL-Bold.otf);
+}
+
+.sobre {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    font-family: var("BeaufortBold");
+    background-color: #272741e3;
+    color: white;
+}
+
+.sobre__titulo {
+    font-family: "BeaufortBold";
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.sobre__texto {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.divisao__imagem {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.sobre__imagem {
+    border-radius: 50%;
+    width: 300px;
+    border: 3px solid var(--primary-color);
+}

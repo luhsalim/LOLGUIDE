@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.rodape {
+    background-color: #1c1c1e;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: rgba(200, 170, 110, 0.815);
+    
+}
+
+.rodape a:hover {
+    color: rgb(218, 182, 111);
+}

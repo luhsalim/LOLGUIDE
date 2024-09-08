@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url(css/header.css);
+@import url(css/sobre.css);
+@import url(css/search.css);
+@import url(css/destaque.css);
+@import url(css/mais-fortes.css);
+@import url(css/footer.css);
+
+:root {
+    --primary-color: rgb(200, 170, 110);
+    --secondary-color: rgb(255, 0, 0);
+    --mid-primary-color: rgb(0, 75, 214);
+    --mid-secondary-color: rgb(211, 2, 2);
+    --dark-primary-color: rgb(0, 47, 134);
+    --dark-secondary-color: rgb(121, 0, 0);
+    --dark-color: black;
+    --light-color: white;
+
+    --fonte-principal: Arial, sans-serif;
+}
+
+body, html {
+    font-family: var(--fonte-principal);
+    background: url(/images/Mapa_de_Runeterra.png) center no-repeat fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 900px;
+    margin-inline: auto;
+}
+

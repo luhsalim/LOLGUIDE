@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url(/css/header.css);
+@import url(/css/search.css);
+@import url(/css/campeao.css);
+@import url(/css/habilidades.css);
+@import url(/css/footer.css);
+
+:root {
+    --primary-color: rgb(200, 170, 110);
+    --secondary-color: rgb(255, 0, 0);
+    --mid-primary-color: rgb(0, 75, 214);
+    --mid-secondary-color: rgb(211, 2, 2);
+    --dark-primary-color: rgb(0, 47, 134);
+    --dark-secondary-color: rgb(121, 0, 0);
+    --dark-color: black;
+    --light-color: white;
+
+    --fonte-principal: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+
+/* Estilo geral permanece o mesmo */
+
+/* Ajustes para tablet */
+@media (max-width: 1024px) {
+    /* Ajuste no cabeçalho */
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cabecalho__menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Imagem e conteúdo do campeão */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-campeao {
+        max-width: 80%;
+    }
+
+    .dados-campeao {
+        max-width: 90%;
+    }
+
+    .habilidades-icones {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .icone-habilidade {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Ajustes para desktop */
+@media (min-width: 1025px) {
+    /* Cabeçalho */
+    .cabecalho {
+        padding: 30px 60px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho__item a {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    /* Imagem e conteúdo do campeão */
+    .imagem-campeao {
+        max-width: 700px;
+        height: 500px;
+    }
+
+    .imagem__conteudo h2 {
+        font-size: 3rem;
+    }
+
+    .dados-campeao {
+        max-width: 700px;
+    }
+
+    /* Habilidades */
+    .icone-habilidade {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Rodapé */
+    .rodape {
+        padding: 30px;
+        font-size: 1rem;
+    }
+}

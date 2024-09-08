@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "BeaufortHeavy";
+    src: url(/font/BeaufortforLOL-Heavy.otf);
+}
+
+@font-face {
+    font-family: "BeaufortHeavyItalic";
+    src: url(/font/BeaufortforLOL-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBold";
+    src: url(/font/BeaufortforLOL-Bold.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBoldItalic";
+    src: url(/font/BeaufortforLOL-BoldItalic.otf);
+}
+
+.cabecalho {
+    width: 100vw;
+    background-color: #1c1c1e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cabecalho__logo {
+    margin-bottom: 10px;
+}
+
+.cabecalho__logo img {
+    display: none;
+}
+
+.cabecalho__titulo {
+    font-family: "BeaufortHeavy";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(200, 170, 110);
+}
+
+
+.cabecalho__menu {
+    margin-top: 15px;
+    
+    font-family: "BeaufortBold";
+
+}
+
+.cabecalho__lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cabecalho__item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cabecalho__item a:hover {
+    color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    .cabecalho {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin-bottom: 0;
+    }
+
+    .cabecalho__logo img {
+        width: 50px;
+    }
+
+    .cabecalho__menu {
+        margin-top: 0;
+    }
+}

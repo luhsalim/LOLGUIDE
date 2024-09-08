@@ -1,0 +1,186 @@
+@charset "UTC-8";
+
+
+@font-face {
+    font-family: "BeaufortHeavy";
+    src: url(/font/BeaufortforLOL-Heavy.otf);
+}
+
+@font-face {
+    font-family: "BeaufortHeavyItalic";
+    src: url(/font/BeaufortforLOL-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBold";
+    src: url(/font/BeaufortforLOL-Bold.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBoldItalic";
+    src: url(/font/BeaufortforLOL-BoldItalic.otf);
+}
+
+#mais-fortes {
+    background-color: #272741e3;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fundo {
+    
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.fundo h2 {
+    font-family: "BeaufortHeavy";
+}
+
+
+#mais-fortes h2 {
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+.rotas {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.rota {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.rota a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+
+.rota img {
+    width: 30px;
+    height: 30px;
+}
+
+.rota__lane {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3b3b63e3;;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 1rem;
+    font-family: "BeaufortBold";
+}
+
+.rota__lane:hover {
+    background-color: var(--primary-color);
+}
+
+.rota__campeoes {
+    background-color: var(--dark-primary-color);
+    border-radius: 5px;
+    border: 3px solid var(--primary-color);
+}
+
+
+.rota__campeoes > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #3b3b63e3;;
+}
+
+.rota__campeao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.rota__campeao p {
+    font-family: "BeaufortBoldItalic";
+}
+
+.rota__campeao:hover {
+    background-color: var(--primary-color);
+}
+
+
+.rota__campeao img {
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .rota {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rota a {
+        max-width: 150px;
+    }
+
+    .rota__lane {
+        padding: 1.45rem;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #mais-fortes {
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .rotas {
+        flex-direction: row;
+    }
+
+    .rota {
+        flex-direction: column;
+    }
+
+    .rota__lane {
+        gap: 0;
+    }
+
+    .rota__campeoes {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+    .rota__campeoes ul{
+        
+        width: 100%;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "BeaufortHeavyItalic";
+    src: url(/font/BeaufortforLOL-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBoldItalic";
+    src: url(/font/BeaufortforLOL-BoldItalic.otf);
+}
+
+#info-campeao {
+    background-color: rgba(39, 39, 65, 0.9);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.imagem-campeao {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 630px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.imagem__conteudo {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.342);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.imagem__conteudo h3 {
+    font-family: "BeaufortBoldItalic";
+    font-size: 1.2rem;
+    color: rgb(200, 170, 110);
+}
+
+.imagem__conteudo h2 {
+    font-family: "BeaufortHeavyItalic";
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.imagem__conteudo p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Dados do Campeão */
+.dados-campeao {
+    max-width: 600px;
+}
+
+.dados-campeao h2 {
+    font-family: "BeaufortBoldItalic";
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.dados-campeao ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.dados-campeao p {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.dados-campeao-runas {
+    background-color: #0a0e15;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.runas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.runas-primarias, .runas-secundarias, .runas-shards {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.runa-primaria, .runa-secundaria, .runa-shard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.runa-selecionada {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #c79b3b;
+    background-color: #1e2328;
+    padding: 5px;
+}
+
+.runa-selecionada img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.runas-bonus {
+    margin: 0 0 0 auto;
+    background-color: #1e2328;
+    padding: 10px;
+    border-radius: 5px;
+    color: #c79b3b;
+}
+
+.runas-bonus p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.runas-bonus ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.runas-bonus ul li {
+    margin-bottom: 5px;
+}
+
+
+.dados-campeao-itens {
+    margin-top: 20px;
+}
+
+.dados-campeao-itens h2, .dados-campeao-itens h3 {
+    color: #fff;
+    font-size: 1.5em;
+    border-bottom: 2.5px solid var(--primary-color);
+    margin-bottom: 10px;
+    padding: 1rem 0;
+}
+
+.itens-iniciais, .build-completa {
+    margin-bottom: 20px;
+}
+
+.itens-iniciais {
+    display: flex;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-iniciais {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.item img {
+    padding-top: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+.item p {
+    color: #fff;
+    font-size: .8em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.texto__dourado {
+    color: rgb(200, 170, 110);
+}
+
+/* Estilo geral permanece o mesmo */
+
+/* Ajustes para tablet */
+@media (max-width: 1024px) {
+    /* Ajuste no cabeçalho */
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cabecalho__menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Imagem e conteúdo do campeão */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-campeao {
+        max-width: 80%;
+    }
+
+    .dados-campeao {
+        max-width: 90%;
+    }
+
+    .habilidades-icones {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .icone-habilidade {
+        width: 60px;
+        height: 60px;
+    }
+}

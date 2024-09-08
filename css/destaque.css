@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "BeaufortHeavy";
+    src: url(/font/BeaufortforLOL-Heavy.otf);
+}
+
+@font-face {
+    font-family: "BeaufortHeavyItalic";
+    src: url(/font/BeaufortforLOL-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: "BeaufortBoldItalic";
+    src: url(/font/BeaufortforLOL-BoldItalic.otf);
+}
+
+/* Estilos gerais */
+#destaques {
+    background-color: #272741e3;
+    /* Fundo escuro */
+    color: #fff;
+    /* Texto claro */
+    padding: 5px;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.destaques__titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "BeaufortHeavy";
+    color: white;
+}
+
+/* Estilos dos cards */
+.campeoes__destaque {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.campeoes__destaque a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.campeao {
+    border-radius: 10px;
+    padding: 1.5rem 0.25rem;
+    text-align: center;
+    width: 10rem;
+    background-color: #3b3b63e3;
+    border: 3px solid #3b3b63e3;
+}
+
+.campeao h3 {
+    font-family: "BeaufortHeavyItalic";
+    color: white;
+}
+
+.campeao p {
+    font-family: "BeaufortBoldItalic";
+}
+
+.campeao:hover {
+    transform: scale(1.1);
+    border: 3px solid var(--primary-color);
+}
+
+.campeao img {
+    width: 71.5px;
+    height: 71.5px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    border: 3px solid var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    .campeoes__destaque {
+        flex-direction: row;
+    }
+}

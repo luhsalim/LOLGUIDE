@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOLGUIDE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho__logo">
+                <img src="/images/sett/Sett_Icon.png" alt="sett">
+                <h1 class="cabecalho__titulo">LOLGUIDE</h1>
+            </div>
+            <div class="cabecalho__menu">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__item"><a href="index.html">Home</a></li>
+                    <li class="cabecalho__item"><a href="/todos-campeoes/todos-campeoes.html">Campeões</a></li>
+                    <li class="cabecalho__item"><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="cabecalho__logo">
+                <!-- VASCO MAIOR DO BRASIL -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Barra de Pesquisa -->
+        <section class="container-pesquisa">
+            <h2 class="pesquisa-titulo">Pesquise o seu campeão favorito.</h2>
+            <div class="item-pesquisa">
+                <input type="search" placeholder="Digite o nome do campeão" class="pesquisa-barra" id="input-pesquisa">
+                <!-- <button class="pesquisa-botao" onclick="pesquisar()">Pesquisar</button> -->
+            </div>
+        </section>
+
+        <section class="resultados-pesquisa">
+            <!-- Resultados da pesquisa aparecerão aqui -->
+        </section>
+
+        <!-- Campeões em Destaque -->
+        <section id="destaques">
+            <h2 class="destaques__titulo">DESTAQUES</h2>
+            <div class="campeoes__destaque">
+                <a href="/campeoes/top/sett.html">
+                    <div class="campeao">
+                        <img src="images/campeoes/sett/Sett_Icon.png" alt="Sett">
+                        <h3>Sett</h3>
+                        <p>O Chefe</p>
+                    </div>
+                </a>
+                <a href="/campeoes/top/mordekaiser.html">
+                    <div class="campeao">
+                        <img src="images/campeoes/mordekaiser/Mordekaiser_Icon.png" alt="Mordekaiser">
+                        <h3>Mordekaiser</h3>
+                        <p>O Revenã de Ferro</p>
+                    </div>
+                </a>
+                <a href="/campeoes/mid/neeko.html">
+                    <div class="campeao">
+                        <img src="images/campeoes/neeko/Neeko_Icon.png" alt="Aatrox">
+                        <h3>Neeko</h3>
+                        <p>A Camaleoa Curiosa</p>
+                    </div>
+                </a>
+                <a href="/campeoes/sup/pyke.html">
+                    <div class="campeao">
+                        <img src="images/campeoes/pyke/Pyke_Icon.png" alt="Nasus">
+                        <h3>Pyke</h3>
+                        <p>O Estripador Das Águas Ssangrentas</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Campeões Mais Fortes Atualmente -->
+        <section id="mais-fortes">
+            <div class="fundo">
+                <h2>Campeões Mais Fortes Atualmente</h2>
+                <div class="rotas">
+                    <!-- Topo -->
+                    <div class="rota">
+                        <a href="/todos-campeoes/todos-campeoes.html#TOP">
+                            <div class="rota__lane">
+                                <img src="images/Top_Icon.png" alt="Topo">
+                                <p>TOP</p>
+                            </div>
+                        </a>
+                        <div class="rota__campeoes">
+                            <ul>
+                                <a href="/campeoes/top/sett.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/sett/Sett_Icon.png" alt="Sett">
+                                        <p>SETT</p>
+                                    </li>
+                                </a>
+                                <a href="campeoes/top/mordekaiser.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/mordekaiser/Mordekaiser_Icon.png" alt="Mordekaiser">
+                                        <p>MORDEKAISER</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Selva -->
+                    <div class="rota">
+                        <a href="/todos-campeoes/todos-campeoes.html#JG">
+                            <div class="rota__lane">
+                                <img src="images/Jungle_Icon.png" alt="Jungle">
+                            <p>JG‎</p>
+                            </div>
+                        </a>
+                        <div class="rota__campeoes">
+                            <ul>
+                                <a href="/campeoes/jg/amumu.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/amumu/Amumu_Icon.png" alt="Amumu">
+                                        <p>AMUMU</p>
+                                    </li>
+                                </a>
+                                <a href="campeoes/jg/kayn.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/kayn/Kayn_Icon.png" alt="Kayn">
+                                        <p>KAYN</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Meio -->
+                    <div class="rota">
+                        <a href="/todos-campeoes/todos-campeoes.html#MID">
+                            <div class="rota__lane">
+                                <img src="images/Mid_Icon.png" alt="Mid">
+                            <p>MID</p>
+                            </div>
+                        </a>
+                        <div class="rota__campeoes">
+                            <ul>
+                                <a href="/campeoes/mid/neeko.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/neeko/Neeko_Icon.png" alt="Neeko">
+                                        <p>NEEKO</p>
+                                    </li>
+                                </a>
+                                <a href="campeoes/mid/lux.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/lux/Lux_Icon.png" alt="LUX">
+                                        <p>LUX</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Atirador -->
+                    <div class="rota">
+                        <a href="/todos-campeoes/todos-campeoes.html#ADC">
+                            <div class="rota__lane">
+                                <img src="images/Adc_Icon.png" alt="Adc">
+                            <p>ADC</p>
+                            </div>
+                        </a>
+                        <div class="rota__campeoes">
+                            <ul>
+                                <a href="/campeoes/adc/kaisa.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/kaisa/Kaisa_Icon.png" alt="Kaisa">
+                                        <p>KAI'SA</p>
+                                    </li>
+                                </a>
+                                <a href="campeoes/adc/jinx.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/jinx/Jinx_Icon.png" alt="Jinx">
+                                        <p>JINX</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Suporte -->
+                    <div class="rota">
+                        <a href="/todos-campeoes/todos-campeoes.html#SUP">
+                            <div class="rota__lane">
+                                <img src="images/Sup_Icon.png" alt="Sup">
+                            <p>SUP</p>
+                            </div>
+                        </a>
+                        <div class="rota__campeoes">
+                            <ul>
+                                <a href="/campeoes/sup/pyke.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/pyke/Pyke_Icon.png" alt="Pyke">
+                                        <p>PYKE</p>
+                                    </li>
+                                </a>
+                                <a href="campeoes/sup/morgana.html">
+                                    <li class="rota__campeao">
+                                        <img src="images/campeoes/morgana/Morg_Icon.png" alt="Morgana">
+                                        <p>MORGANA</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p>
+                © LOLGUIDE - 2024 - Todos os direitos reservados <a href="https://www.riotgames.com/pt-br">Riot Games</a>
+            </p>
+            <p>
+                Site feito por <a href="https://github.com/luhsalim" target="_blank">Luhan Salim</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/dados.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
