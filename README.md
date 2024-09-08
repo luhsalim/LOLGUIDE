@@ -1,6 +1,6 @@
 # LOLGUIDE
 
-**LOLGUIDE** é um projeto dedicado a fornecer informações detalhadas sobre campeões do universo de *League of Legends*. Desenvolvido como parte do evento Alura Immersion Dev, o site é uma fonte completa para aprender sobre as habilidades, itens e runas de diversos campeões. O projeto é composto por páginas interativas para cada campeão, apresentando suas habilidades, melhores runas e itens recomendados.
+**LOLGUIDE** é um projeto dedicado a fornecer informações detalhadas sobre campeões do universo de *League of Legends*. Desenvolvido como parte do evento Imersão Dev Alura, o site é uma fonte completa para aprender sobre as habilidades, itens e runas de diversos campeões. O projeto é composto por páginas interativas para cada campeão, apresentando suas habilidades, melhores runas e itens recomendados.
 
 ## 🛠️ Tecnologias Utilizadas
 
