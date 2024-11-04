@@ -12,25 +12,33 @@ function pesquisar() {
     }
 
     // Filtra campeões com base no valor do input
-    const campeoesFiltrados = campeoes.filter(campeao => campeao.nome.toLowerCase().includes(input));
+    let campeoesFiltrados = campeoes.filter(campeao => campeao.nome.toLowerCase().startsWith(input));
 
     if (campeoesFiltrados.length === 0) {
         resultados.innerHTML = '<p>Nenhum campeão encontrado.</p>';
         return;
     }
 
+     // Ordena os campeões filtrados em ordem alfabética
+     campeoesFiltrados.sort((a, b) => a.nome.localeCompare(b.nome));
+
+     if (campeoesFiltrados.length === 0) {
+         resultados.innerHTML = '<p>Nenhum campeão encontrado.</p>';
+         return;
+     }
+
     // Exibe os campeões filtrados
     campeoesFiltrados.forEach(campeao => {
         const campeaoHTML = `
-                <div class="campeoes__destaque">
-                    <a href="${campeao.link}">
-                        <div class="campeao">
-                            <img src="${campeao.imagem}" alt="${campeao.nome}">
-                            <h3>${campeao.nome}</h3>
-                            <p>${campeao.descricao}</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="campeoes__destaque">
+                <a href="${campeao.link}">
+                    <div class="campeao">
+                        <img src="${campeao.imagem}" alt="${campeao.nome}">
+                        <h3>${campeao.nome}</h3>
+                        <p>${campeao.descricao}</p>
+                    </div>
+                </a>
+            </div>
         `;
         resultados.innerHTML += campeaoHTML;
     });
